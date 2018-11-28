@@ -33,8 +33,8 @@ def get_lyrics(artist, song_title):
     except Exception as e:
         return "Exception occurred \n" +str(e)
 
-artist_name = input("Enter artist\n")
-song_name = input("Song title\n")
+artist_name = input("Enter artist\n").title()
+song_name = input("Song title\n").title()
 titleLength = len(artist_name) + len(song_name) + 1
 print(getAmountOfChar(titleLength, '#'))
 print('\n' + artist_name + '-' + song_name + '\n')
